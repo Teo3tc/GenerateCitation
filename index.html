@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📜 Generateur de citation</title>
+  <link rel="stylesheet" type="text/css" href="./css/grid.css" />
+  <link rel="stylesheet" type="text/css" href="./css/main.css" />
+</head>
+
+<body class="w-100 x-grid-basic">
+  <!-- Choose citation 1 or 2 -->
+  <div class="nav h-10-vh grid-1-1-c grid-1-2-r x-grid-basic-5x5">
+    <btn-choice bloc-citation="Bloc de citation 1"
+      class="btnCitation1 choose btn-style w-80 w-sm-80 h-50 full-center grid-1-3-c grid-1-2-sm-c grid-1-1-r x-grid-basic-1x1 x-black"
+      title="Extrait de la nausée - Jean-paul Sartre"></btn-choice>
+    <btn-choice bloc-citation="Bloc de citation 2"
+      class="btnCitation2 choose btn-style w-80 w-sm-80 h-50 x-left y-center grid-3-5-c grid-2-3-sm-c grid-1-1-r x-grid-basic-1x1 x-black"
+      title="Extrait 1984 - George Orwell ">
+    </btn-choice>
+    <!-- Reset -->
+    <btn-reset class="btnReset btn-style w-80 w-sm-50 h-50 full-center grid-5-1-c grid-1-1-r x-grid-basic-1x1">
+    </btn-reset>
+  </div>
+  <!-- Generer citation 1/2/3/4/5 -->
+  <div class="nav nav2 h-10-vh grid-1-1-c grid-2-3-r x-grid-basic-6x6">
+    <div class="texteGenerer w-80 h-50 full-center grid-1-2-c grid-1-1-r x-grid-basic-1x1">
+      <h4 class="full-center grid-full-c-r">Generer :</h4>
+    </div>
+    <!-- generer 1 -->
+    <btn-generer class="btn btn-style w-80 w-sm-50 h-50 full-center grid-2-3-c grid-1-1-r x-grid-basic-1x1"
+      nbr-de-citation="1" type-citation="0"></btn-generer>
+    <!-- generer 2 -->
+    <btn-generer class="btn btn-style w-80 w-sm-50 h-50 full-center grid-3-4-c grid-1-1-r x-grid-basic-1x1"
+      nbr-de-citation="2" type-citation="0"></btn-generer>
+    <!-- generer 3 -->
+    <btn-generer class="btn btn-style w-80 w-sm-50 h-50 full-center grid-4-5-c grid-1-1-r x-grid-basic-1x1"
+      nbr-de-citation="3" type-citation="0"></btn-generer>
+    <!-- generer 4 -->
+    <btn-generer class="btn btn-style w-80 w-sm-50 h-50 full-center grid-5-6-c grid-1-1-r x-grid-basic-1x1"
+      nbr-de-citation="4" type-citation="0"></btn-generer>
+    <!-- generer 5 -->
+    <btn-generer class="btn btn-style w-80 w-sm-50 h-50 full-center grid-6-1-c grid-1-1-r x-grid-basic-1x1"
+      nbr-de-citation="5" type-citation="0"></btn-generer>
+  </div>
+  <!-- Show citation -->
+  <div class="citation grid-1-1-c grid-3-4-r w-95 w-sm-80 full-center"></div>
+
+  <script type="module" src="./js/index.js"></script>
+  <script></script>
+</body>
+
+</html>
